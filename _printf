@@ -1,0 +1,46 @@
+#include<stdlib.h>
+#include "main.h"
+
+/**
+*_printf - produces output according to format
+*@format: character string
+*Return: number of characters
+*/
+
+int _printf(const char *format, ...)
+{
+unsigned int i, j, c, print_char;
+        char s;
+
+        va_list arg;
+        va_atart (ar, format);
+
+        for (i = 0; format[i] != '\0'; i++)
+        {
+                if (format[i] != '%')
+                _putchar (format[i]);
+
+                else if(format[i + 1] == 'c')
+        {
+                c = va_arg(arg, int);
+                i++;
+        }
+                else if (format [i + 1] == 's')
+                {
+                s = va_arg (arg, char *);
+                j = 0;
+
+                while (s[j] != '\0')
+                {
+                _putchar (s[j]);
+                print_char++;
+                }
+                else if (format [i + 1] == '%')
+                {
+                _putchar ('%');
+                 {
+                _putchar ('%');
+                j++;
+                print_char++
+return (count);
+}
